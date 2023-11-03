@@ -4,26 +4,26 @@ import ShareIcon from './ShareIcon'
 import SharedIcon from './SharedIcon'
 import styles from './styles.module.css'
 
-const ShareButton = ({ className, initialCount, onClick }) => {
+const ShareButton = ({ className, count, onClick }) => {
   const [shared, setShared] = useState(false)
-  const [count, setCount] = useState(0)
+  const [counter, setCounter] = useState(0)
   const debouncedOnClick = debounce(onClick, 500)
 
   const handleClick = () => {
     const isShared = !shared
-    const newCount = isShared ? count + 1 : count - 1
+    const newCount = isShared ? counter + 1 : counter - 1
     setShared(isShared)
-    setCount(newCount)
+    setCounter(newCount)
     debouncedOnClick({ shared: isShared, count: newCount })
   }
 
   useEffect(() => {
-    setCount(initialCount)
-  }, [initialCount])
+    setCounter(count)
+  }, [count])
 
   return (
     <button className={`${styles.share} ${className}`} onClick={handleClick}>
-      <div>{shared ? <SharedIcon /> : <ShareIcon />} {count}</div>
+      <div>{shared ? <SharedIcon /> : <ShareIcon />} {counter}</div>
       <div className={styles.tooltip} role="tooltip">{shared ? 'Shared' : 'Share'}</div>
     </button>
   )
