@@ -1,16 +1,7 @@
 import { useState, useEffect } from 'react'
+import { debounce } from '../../utilities/debounce'
 import CommentsIcon from './CommentsIcon'
 import styles from './styles.module.css'
-
-const debounce = (fn, delay) => {
-  let timeoutId
-  return (...args) => {
-    clearTimeout(timeoutId)
-    timeoutId = setTimeout(() => {
-      fn(...args)
-    }, delay)
-  }
-}
 
 const CommentsButton = ({ className, initialCount, onChange }) => {
   const [count, setCount] = useState(0)
