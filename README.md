@@ -15,21 +15,21 @@ import {
 
 ### BookmarkButton
 ```javascript
-  <BookmarkButton className="my-custom-class" onChange={handleBookmarkChange} />
+<BookmarkButton className="my-custom-class" onChange={handleBookmarkChange} />
 ```  
 
 ### CommentButton
 ```javascript
-  <CommentButton className="my-custom-class" initialCount={0} onChange={handleCommentChange} />
+<CommentButton className="my-custom-class" initialCount={0} onChange={handleCommentChange} />
 ```  
 
 ### LikeButton
 ```javascript
-  <LikeButton className="my-custom-class" initialCount={0} onChange={handleLikeChange} />
+<LikeButton className="my-custom-class" initialCount={0} onChange={handleLikeChange} />
 ```  
 
 ### ShareButton
 ```javascript
-  <ShareButton className="my-custom-class" initialCount={0} onChange={handleShareChange} />
+<ShareButton className="my-custom-class" initialCount={0} onChange={handleShareChange} />
 ```
 
