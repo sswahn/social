@@ -4,14 +4,14 @@ import BookmarkIcon from './LikeIcon'
 import BookmarkedIcon from './LikedIcon'
 import styles from './styles.module.css'
 
-const BookmarkButton = ({ className, onChange }) => {
+const BookmarkButton = ({ className, onClick }) => {
   const [bookmark, setBookmark] = useState(false)
-  const debouncedOnChange = debounce(onChange, 500)
+  const debouncedOnClick = debounce(onClick, 500)
 
   const handleClick = event => {
     const isBookmarked = !bookmark
     setBookmark(isBookmarked)
-    debouncedOnChange({ bookmarked: isBookmarked })
+    debouncedOnClick({ bookmarked: isBookmarked })
   }
 
   return (
