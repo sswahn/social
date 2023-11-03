@@ -27,7 +27,7 @@ const CommentsButton = ({ className, initialCount, onChange }) => {
   }, [initialCount])
 
   return (
-    <button className={`${styles.like} ${className}`} onClick={handleClick}>
+    <button className={`${styles.comments} ${className}`} onClick={handleClick}>
       <div><CommentsIcon /> {count}</div>
       <div className={styles.tooltip} role="tooltip">Comment</div>
     </button>
