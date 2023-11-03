@@ -28,3 +28,5 @@ import { BookmarkButton, CommentButton, LikeButton, ShareButton } from '@sswahn/
 <ShareButton className="my-custom-class" count={0} onClick={handleShareClick} />
 ```
 
+## License
+Social is [MIT Licensed](https://github.com/sswahn/social/blob/main/LICENSE)
