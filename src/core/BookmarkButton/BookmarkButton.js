@@ -1,8 +1,8 @@
 import { useState } from 'react'
+import { debounce } from '../../utilities/debounce'
 import BookmarkIcon from './LikeIcon'
 import BookmarkedIcon from './LikedIcon'
 import styles from './styles.module.css'
-import { debounce } from '../../utilities/debounce'
 
 const BookmarkButton = ({ className, onChange }) => {
   const [bookmark, setBookmark] = useState(false)
