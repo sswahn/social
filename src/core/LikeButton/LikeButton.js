@@ -4,26 +4,26 @@ import LikeIcon from './LikeIcon'
 import LikedIcon from './LikedIcon'
 import styles from './styles.module.css'
 
-const LikeButton = ({ className, initialCount, onClick }) => {
+const LikeButton = ({ className, count, onClick }) => {
   const [liked, setLiked] = useState(false)
-  const [count, setCount] = useState(0)
+  const [counter, setCounter] = useState(0)
   const debouncedOnClick = debounce(onClick, 500)
 
   const handleClick = () => {
     const isLiked = !liked
-    const newCount = isLiked ? count + 1 : count - 1
+    const newCount = isLiked ? counter + 1 : counter - 1
     setLiked(isLiked)
-    setCount(newCount)
+    setCounter(newCount)
     debouncedOnClick({ liked: isLiked, count: newCount })
   }
 
   useEffect(() => {
-    setCount(initialCount)
-  }, [initialCount])
+    setCounter(count)
+  }, [count])
 
   return (
     <button className={`${styles.like} ${className}`} onClick={handleClick}>
-      <div>{liked ? <LikedIcon /> : <LikeIcon />} {count}</div>
+      <div>{liked ? <LikedIcon /> : <LikeIcon />} {counter}</div>
       <div className={styles.tooltip} role="tooltip">{liked ? 'Liked' : 'Like'}</div>
     </button>
   )
