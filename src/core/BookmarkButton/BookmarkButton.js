@@ -19,7 +19,7 @@ const BookmarkButton = ({ className, onChange }) => {
 
   const handleClick = event => {
     const isBookmarked = !bookmark
-    setLiked(isBookmarked)
+    setBookmark(isBookmarked)
     debouncedOnChange({ bookmarked: isBookmarked })
   }
 
