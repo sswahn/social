@@ -4,17 +4,17 @@ import LikeIcon from './LikeIcon'
 import LikedIcon from './LikedIcon'
 import styles from './styles.module.css'
 
-const LikeButton = ({ className, initialCount, onChange }) => {
+const LikeButton = ({ className, initialCount, onClick }) => {
   const [liked, setLiked] = useState(false)
   const [count, setCount] = useState(0)
-  const debouncedOnChange = debounce(onChange, 500)
+  const debouncedOnClick = debounce(onClick, 500)
 
   const handleClick = () => {
     const isLiked = !liked
     const newCount = isLiked ? count + 1 : count - 1
     setLiked(isLiked)
     setCount(newCount)
-    debouncedOnChange({ liked: isLiked, count: newCount })
+    debouncedOnClick({ liked: isLiked, count: newCount })
   }
 
   useEffect(() => {
