@@ -10,21 +10,21 @@ import { BookmarkButton, CommentButton, LikeButton, ShareButton } from '@sswahn/
 
 ### BookmarkButton
 ```javascript
-<BookmarkButton className="my-custom-class" onClick={handleBookmarkChange} />
+<BookmarkButton className="my-custom-class" onClick={handleBookmarkClick} />
 ```  
 
 ### CommentButton
 ```javascript
-<CommentButton className="my-custom-class" initialCount={0} onClick={handleCommentChange} />
+<CommentButton className="my-custom-class" count={0} onClick={handleCommentClick} />
 ```  
 
 ### LikeButton
 ```javascript
-<LikeButton className="my-custom-class" initialCount={0} onClick={handleLikeChange} />
+<LikeButton className="my-custom-class" count={0} onClick={handleLikeClick} />
 ```  
 
 ### ShareButton
 ```javascript
-<ShareButton className="my-custom-class" initialCount={0} onClick={handleShareChange} />
+<ShareButton className="my-custom-class" count={0} onClick={handleShareClick} />
 ```
 
