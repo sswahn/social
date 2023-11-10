@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
-import { debounce } from '../../utilities/debounce'
-import ShareIcon from './ShareIcon'
-import SharedIcon from './SharedIcon'
+import { debounceUtility } from '../../utilities/debounceUtility.js'
+import ShareIcon from './ShareIcon.js'
+import SharedIcon from './SharedIcon.js'
 import styles from './styles.module.css'
 
-const ShareButton = ({ className, count, onClick }) => {
+const ShareButton = ({ className, count, onClick, debounce }) => {
   const [shared, setShared] = useState(false)
   const [counter, setCounter] = useState(0)
-  const debouncedOnClick = debounce(onClick, 500)
+  const debouncedOnClick = debounceUtility(onClick, debounce || 500)
 
   const handleClick = () => {
     const isShared = !shared
