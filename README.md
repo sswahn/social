@@ -3,7 +3,7 @@
 A library of React components for managing social actions like bookmarking, commenting, liking, and sharing.
 
 ## Usage
-To use the components provided by this library, you need to import them into your React application and integrate them as needed.
+Import the components.
 ```javascript
 import { Avatar, BookmarkButton, CommentButton, LikeButton, ShareButton } from '@sswahn/social'
 ```
