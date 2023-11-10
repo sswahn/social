@@ -49,7 +49,6 @@ Social buttons with built-in customizable debouncing. Customizing debounce is op
   className="custom-Comment-btn"
   count={0}
   onClick={handleCommentClick}
-  debounce={1000} 
 />
 ```  
 
