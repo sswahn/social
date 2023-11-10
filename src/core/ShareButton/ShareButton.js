@@ -3,7 +3,7 @@ import ShareIcon from './ShareIcon.js'
 import SharedIcon from './SharedIcon.js'
 import styles from './styles.module.css'
 
-const ShareButton = ({ className, onClick, debounce }) => {
+const ShareButton = ({ className, onClick }) => {
   const [shared, setShared] = useState(false)
 
   const handleClick = () => {
