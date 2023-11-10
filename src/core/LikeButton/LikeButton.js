@@ -11,9 +11,7 @@ const LikeButton = ({ className, icon, count, onClick }) => {
 
   const handleClick = () => {
     const isLiked = !liked
-    const newCount = isLiked ? counter + 1 : counter - 1
     setLiked(isLiked)
-    setCounter(newCount)
     onClick({ liked: isLiked, count: newCount })
   }
 
