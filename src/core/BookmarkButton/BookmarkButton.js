@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import BookmarkIcon from './LikeIcon.js'
-import BookmarkedIcon from './LikedIcon.js'
+import BookmarkIcon from './BookmarkIcon.js'
+import BookmarkedIcon from './BookmarkedIcon.js'
 import styles from './styles.module.css'
 
 const BookmarkButton = ({ className, onClick }) => {
