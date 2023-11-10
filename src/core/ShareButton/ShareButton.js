@@ -13,7 +13,7 @@ const ShareButton = ({ className, onClick }) => {
   }
 
   return (
-    <button className={`${styles.share} ${className}`} onClick={handleClick}>
+    <button className={`${styles.share} ${className || ''}`} onClick={handleClick}>
       <div>{shared ? <SharedIcon /> : <ShareIcon />}</div>
       <div className={styles.tooltip} role="tooltip">{shared ? 'Shared' : 'Share'}</div>
     </button>
