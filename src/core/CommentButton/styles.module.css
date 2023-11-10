@@ -15,8 +15,9 @@
 }
 
 .comments:first-child {
-  color: black;
+  background: red;
   display: flex;
+  flex-direction: row;
 }
 
 .tooltip {
