@@ -17,6 +17,10 @@
   opacity: 1;
 }
 
+.comments:first-child {
+  display: flex;
+}
+
 .tooltip {
   background-color: #575a62;
   border-radius: 5px;
