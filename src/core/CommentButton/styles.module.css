@@ -2,11 +2,11 @@
 
 .comments {
   background: none;
-  border: 1px dashed #eee;
+  border: 1px dashed #ccc;
   cursor: pointer;
   font-size: 22px; 
   position: relative;
-  width: 40px;
+  width: 100px;
 }
 
 .comments:hover .tooltip {
