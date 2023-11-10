@@ -32,31 +32,47 @@ The Avatar component displays user avatars or profile images. Has built in defau
 />
 ```  
 
+Social buttons with built-in customizable debouncing.  
+
 ### BookmarkButton
 ```javascript
-<BookmarkButton className="my-custom-class" onClick={handleBookmarkClick} />
+<BookmarkButton
+  className="custom-bookmark-btn"
+  onClick={handleBookmarkClick}
+  debounce={1000} // optional debounce prop, defaults to 500 milliseconds
+/>
 ```  
 
 ### CommentButton
 ```javascript
-<CommentButton className="my-custom-class" count={0} onClick={handleCommentClick} />
+<CommentButton
+  className="custom-Comment-btn"
+  count={0}
+  onClick={handleCommentClick}
+  debounce={1000} 
+/>
 ```  
 
 ### LikeButton
-A social like button with changeable icon and built-in customizable debouncing.
+
 ```javascript
 <LikeButton
-  className="my-custom-class"
+  className="custom-like-btn"
   count={0}
   onClick={handleLikeClick}
-  icon={heart} // heart or hand
-  debounce={1000} // optional, default of 500 milliseconds
+  icon={heart} // optional, heart or hand. default is hand.
+  debounce={1000}
 />
 ```  
 
 ### ShareButton
 ```javascript
-<ShareButton className="my-custom-class" count={0} onClick={handleShareClick} />
+<ShareButton
+  className="custom-share-btn"
+  count={0}
+  onClick={handleShareClick}
+  debounce={1000} 
+/>
 ```
 
 ## License
