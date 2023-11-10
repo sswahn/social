@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import CommentIcon from './CommentIcon'
+import CommentIcon from './CommentIcon.js'
 import styles from './styles.module.css'
 
 const CommentButton = ({ className, count, onClick }) => {
