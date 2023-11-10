@@ -33,12 +33,10 @@ The Avatar component displays user avatars or profile images. Has built in defau
 ```  
 
 ### BookmarkButton
-Bookmark button with built-in customizable debouncing. Customizing debounce is optional, it has a default of 500 milliseconds.
 ```javascript
 <BookmarkButton
   className="custom-bookmark-btn"
   onClick={handleBookmarkClick}
-  debounce={1000}
 />
 ```  
 
@@ -52,14 +50,13 @@ Bookmark button with built-in customizable debouncing. Customizing debounce is o
 ```  
 
 ### LikeButton
-Like button with an optional choice of heart or hand icons. Also has built-in customizable debouncing. Customizing debounce is optional, it has a default of 500 milliseconds.
+Like button with an optional choice of heart or hand icons, defaults to hand.
 ```javascript
 <LikeButton
   className="custom-like-btn"
+  icon={heart}
   count={0}
   onClick={handleLikeClick}
-  icon={heart}
-  debounce={1000}
 />
 ```  
 
@@ -80,7 +77,6 @@ Social requires React as a peer dependency. You should have React installed in y
 This library uses Font Awesome Icons.
 - Font Awesome Icons: [Font Awesome](https://fontawesome.com/)
   - Icons used under the [Font Awesome Free License](https://fontawesome.com/license/free).
-
 
 
 ## License
