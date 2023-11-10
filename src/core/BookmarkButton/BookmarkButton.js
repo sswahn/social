@@ -7,9 +7,8 @@ const BookmarkButton = ({ className, onClick }) => {
   const [bookmark, setBookmark] = useState(false)
 
   const handleClick = event => {
-    const isBookmarked = !bookmark
-    setBookmark(isBookmarked)
-    onClick({ bookmarked: isBookmarked })
+    setBookmark(!bookmark)
+    onClick()
   }
 
   return (
