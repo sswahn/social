@@ -16,6 +16,10 @@
   display: flex;
 }
 
+.like div:first-child div:last-child {
+  font-size: 18px;
+}
+
 .tooltip {
   background-color: #575a62;
   border-radius: 5px;
