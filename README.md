@@ -1,6 +1,6 @@
 # Social · [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/sswahn/social/blob/main/LICENSE) ![npm version](https://img.shields.io/npm/v/@sswahn/social)
 
-A collection of reusable social components for use with React.  
+A collection of customizable, reusable social components for use with React.  
 
 ## Installation
 
