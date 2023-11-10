@@ -2,13 +2,9 @@
 .bookmark {
   background-color: none;
   border: 0;
-  border-radius: 50%;
-  color: white;
   cursor: pointer;
   font-size: 22px; 
-  height: 45px;
-  position: relative;
-  width: 45px; 
+  position: relative; 
 }
 
 .bookmark:hover .tooltip {
