@@ -33,7 +33,6 @@ The Avatar component displays user avatars or profile images. Has built in defau
 ```  
 
 ### BookmarkButton
-
 ```javascript
 <BookmarkButton className="my-custom-class" onClick={handleBookmarkClick} />
 ```  
@@ -44,8 +43,15 @@ The Avatar component displays user avatars or profile images. Has built in defau
 ```  
 
 ### LikeButton
+A social like button with changeable icon and built-in customizable debouncing.
 ```javascript
-<LikeButton className="my-custom-class" count={0} onClick={handleLikeClick} />
+<LikeButton
+  className="my-custom-class"
+  count={0}
+  onClick={handleLikeClick}
+  icon={heart} // heart or hand
+  debounce={1000} // optional, default of 500 milliseconds
+/>
 ```  
 
 ### ShareButton
