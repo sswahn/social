@@ -1,6 +1,6 @@
 # Social
 
-A library of React components for managing social actions like bookmarking, commenting, liking, and sharing.
+A library of React components for managing social actions like displaying Avatars, bookmarking, commenting, liking, and sharing.
 
 ## Usage
 Import the components.
