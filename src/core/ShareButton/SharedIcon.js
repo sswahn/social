@@ -6,4 +6,4 @@ const SharedIcon = () => {
     </svg>
   )
 }
-export default ShareIcon
+export default SharedIcon
