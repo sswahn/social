@@ -13,7 +13,7 @@ const BookmarkButton = ({ className, onClick }) => {
   }
 
   return (
-    <button className={`${styles.bookmark} ${className}`} onClick={handleClick}>
+    <button className={`${styles.bookmark} ${className || ''}`} onClick={handleClick}>
       <div>{bookmark ? <BookmarkedIcon /> : <BookmarkIcon />}</div>
       <div className={styles.tooltip} role="tooltip">{bookmark ? 'Bookmarked' : 'Bookmark'}</div>
     </button>
