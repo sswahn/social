@@ -2,8 +2,14 @@
 
 A collection of customizable, reusable social components for use with React.  
 
+## Features
+- **Customizable Avatar Component**: Display user avatars with a built-in default, allowing customization through a custom class, inclusion of user-specific information, and support for click events.
+- **BookmarkButton for Content Saving**: Enable users to save or bookmark content with a customizable button appearance and functionality for handling bookmark click events.
+- **Interactive CommentButton**: Enhance user engagement with comments through a button displaying comment counts, customizable appearance using a custom class, and click event handling.
+- **LikeButton with Icon Options**: Express user approval with a customizable like button, offering options for heart or hand icons, along with customization of appearance, like counts, and click event handling.
+- **ShareButton for Content Sharing**: Facilitate easy content sharing with a customizable share button, including appearance customization through a custom class and functionality for handling share click events.
+  
 ## Installation
-
 Using npm.
 ```bash
 npm install @sswahn/social
@@ -33,6 +39,7 @@ The Avatar component displays user avatars and has a built in default when no im
 ```  
 
 ### BookmarkButton
+The BookmarkButton component represents a button that users can interact with to bookmark or save content.
 ```javascript
 <BookmarkButton
   className="custom-bookmark-btn"
@@ -41,6 +48,7 @@ The Avatar component displays user avatars and has a built in default when no im
 ```  
 
 ### CommentButton
+The `CommentButton` component is a button users can click to interact with comments. It displays the comment count and is customizable with a custom class.
 ```javascript
 <CommentButton
   className="custom-Comment-btn"
@@ -50,7 +58,7 @@ The Avatar component displays user avatars and has a built in default when no im
 ```  
 
 ### LikeButton
-Like button with an optional choice of heart or hand icons, defaults to hand.
+The `LikeButton` has an optional choice of heart or hand icons, it defaults to hand. Handle click events to implement desired functionality.
 ```javascript
 <LikeButton
   className="custom-like-btn"
@@ -61,6 +69,7 @@ Like button with an optional choice of heart or hand icons, defaults to hand.
 ```  
 
 ### ShareButton
+The `ShareButton` component is a button users can click to share content.
 ```javascript
 <ShareButton
   className="custom-share-btn"
