@@ -17,6 +17,7 @@
 }
 
 .like:first-child {
+  color: black;
   display: flex;
 }
 
