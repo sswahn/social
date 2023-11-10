@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import { debounceUtility } from '../../utilities/debounceUtility'
-import LikeIcon from './LikeIcon'
-import LikedIcon from './LikedIcon'
+import LikeIcon from './LikeIcon.js'
+import LikedIcon from './LikedIcon.js'
 import styles from './styles.module.css'
 
-const LikeButton = ({ className, count, onClick, debounce }) => {
+const LikeButton = ({ className, count, onClick, icon, debounce }) => {
   const [liked, setLiked] = useState(false)
   const [counter, setCounter] = useState(0)
   const debouncedOnClick = debounceUtility(onClick, debounce || 500)
