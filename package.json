@@ -2,7 +2,7 @@
   "name": "@sswahn/social",
   "version": "1.0.0-beta.1",
   "license": "MIT",
-  "description": "A collection of reusable social components for use with React.",
+  "description": "A collection of customizable, reusable social components for use with React.  ",
   "main": "src/index.js",
   "type": "module",
   "keywords": [
