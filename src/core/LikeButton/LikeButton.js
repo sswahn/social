@@ -21,7 +21,10 @@ const LikeButton = ({ className, count, onClick, icon }) => {
 
   return (
     <button className={`${styles.like} ${className}`} onClick={handleClick}>
-      <div>{liked ? <LikedIcon /> : <LikeIcon />} {counter}</div>
+      <div>
+        <div>{liked ? <LikedIcon /> : <LikeIcon />}</div>
+        <div>{counter}</div>
+      </div>
       <div className={styles.tooltip} role="tooltip">{liked ? 'Liked' : 'Like'}</div>
     </button>
   )
