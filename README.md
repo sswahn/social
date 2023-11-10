@@ -32,9 +32,8 @@ The Avatar component displays user avatars or profile images. Has built in defau
 />
 ```  
 
-Social buttons with built-in customizable debouncing. Customizing debounce is optional, it has a default of 500 milliseconds.
-
 ### BookmarkButton
+Bookmark button with built-in customizable debouncing. Customizing debounce is optional, it has a default of 500 milliseconds.
 ```javascript
 <BookmarkButton
   className="custom-bookmark-btn"
@@ -53,13 +52,13 @@ Social buttons with built-in customizable debouncing. Customizing debounce is op
 ```  
 
 ### LikeButton
-
+Like button with an optional choice of heart or hand icons. Also has built-in customizable debouncing. Customizing debounce is optional, it has a default of 500 milliseconds.
 ```javascript
 <LikeButton
   className="custom-like-btn"
   count={0}
   onClick={handleLikeClick}
-  icon={heart} // optional, heart or hand. default is hand.
+  icon={heart}
   debounce={1000}
 />
 ```  
@@ -68,9 +67,7 @@ Social buttons with built-in customizable debouncing. Customizing debounce is op
 ```javascript
 <ShareButton
   className="custom-share-btn"
-  count={0}
   onClick={handleShareClick}
-  debounce={1000} 
 />
 ```
 
