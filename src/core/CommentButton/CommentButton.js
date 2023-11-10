@@ -14,7 +14,7 @@ const CommentButton = ({ className, count, onClick }) => {
   }, [count])
 
   return (
-    <button className={`${styles.comments} ${className}`} onClick={handleClick}>
+    <button className={`${styles.comments} ${className || ''}`} onClick={handleClick}>
       <div>
         <div><CommentIcon /></div>
         <div>{counter}</div>
