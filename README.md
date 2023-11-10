@@ -32,7 +32,7 @@ The Avatar component displays user avatars or profile images. Has built in defau
 />
 ```  
 
-Social buttons with built-in customizable debouncing. Customizing debounce is optional, it has a defaults of 500 milliseconds.
+Social buttons with built-in customizable debouncing. Customizing debounce is optional, it has a default of 500 milliseconds.
 
 ### BookmarkButton
 ```javascript
