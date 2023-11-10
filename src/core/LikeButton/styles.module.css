@@ -2,13 +2,9 @@
 .like {
   background-color: none;
   border: 0;
-  border-radius: 50%;
-  color: white;
   cursor: pointer;
   font-size: 22px; 
-  height: 45px;
   position: relative;
-  width: 45px; 
 }
 
 .like:hover .tooltip {
@@ -16,8 +12,7 @@
   opacity: 1;
 }
 
-.like:first-child {
-  color: black;
+.like div:first-child {
   display: flex;
 }
 
@@ -25,6 +20,7 @@
   background-color: #575a62;
   border-radius: 5px;
   bottom: -30px;
+  color: white;
   font-size: 12px;
   left: -3px;
   opacity: 0;
