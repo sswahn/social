@@ -8,6 +8,17 @@ To use the components provided by this library, you need to import them into you
 import { BookmarkButton, CommentButton, LikeButton, ShareButton } from '@sswahn/social'
 ```
 
+### Avatar
+The Avatar component displays user avatars or profile images. Easily create an avatar element with support for custom user images and badges.
+```javascript
+<Avatar
+  className="custom-avatar"
+  image="/path/to/user-avatar.jpg"
+  username="JohnDoe"
+  onClick={handleClick}
+/>
+```  
+
 ### BookmarkButton
 ```javascript
 <BookmarkButton className="my-custom-class" onClick={handleBookmarkClick} />
