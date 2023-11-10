@@ -1,6 +1,6 @@
 {
   "name": "@sswahn/social",
-  "version": "1.0.0-beta.12",
+  "version": "1.0.0-beta.13",
   "license": "MIT",
   "description": "A collection of customizable, reusable social components for use with React.",
   "main": "src/index.js",
