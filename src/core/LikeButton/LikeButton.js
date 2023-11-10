@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
-import LikeIcon from './LikeIcon.js'
-import LikedIcon from './LikedIcon.js'
+import HandLikeIcon from './HandLikeIcon.js'
+import HandLikedIcon from './HandLikedIcon.js'
+import HeartLikeIcon from './HeartLikeIcon.js'
+import HeartLikedIcon from './HeartLikedIcon.js'
 import styles from './styles.module.css'
 
-const LikeButton = ({ className, count, onClick, icon }) => {
+const LikeButton = ({ className, icon, count, onClick }) => {
   const [liked, setLiked] = useState(false)
   const [counter, setCounter] = useState(0)
 
@@ -20,9 +22,9 @@ const LikeButton = ({ className, count, onClick, icon }) => {
   }, [count])
 
   return (
-    <button className={`${styles.like} ${className}`} onClick={handleClick}>
+    <button className={`${styles.like} ${className || ''}`} onClick={handleClick}>
       <div>
-        <div>{liked ? <LikedIcon /> : <LikeIcon />}</div>
+        <div>{liked ? (icon === 'heart' ? <HeartLikedIcon /> : <HandLikedIcon />) : (icon === 'heart' ? <HeartLikeIcon /> : <HandLikeIcon />)}</div>
         <div>{counter}</div>
       </div>
       <div className={styles.tooltip} role="tooltip">{liked ? 'Liked' : 'Like'}</div>
