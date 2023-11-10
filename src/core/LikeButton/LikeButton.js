@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import HandLikeIcon from './HandLikeIcon.js'
 import HandLikedIcon from './HandLikedIcon.js'
 import HeartLikeIcon from './HeartLikeIcon.js'
@@ -7,25 +7,27 @@ import styles from './styles.module.css'
 
 const LikeButton = ({ className, icon, count, onClick }) => {
   const [liked, setLiked] = useState(false)
-  const [counter, setCounter] = useState(0)
+  //const [counter, setCounter] = useState(0)
+  const counterRef = useRef(null)
 
   const handleClick = () => {
     const isLiked = !liked
-    const newCount = isLiked ? counter + 1 : counter - 1
+    //const newCount = isLiked ? counter + 1 : counter - 1
     setLiked(isLiked)
-    setCounter(newCount)
-    onClick({ liked: isLiked, count: newCount })
+    //setCounter(newCount)
+    onClick()
   }
 
   useEffect(() => {
-    setCounter(count)
+    //setCounter(count)
+    counterRef.current.textContent = count
   }, [count])
 
   return (
     <button className={`${styles.like} ${className || ''}`} onClick={handleClick}>
       <div>
         <div>{liked ? (icon === 'heart' ? <HeartLikedIcon /> : <HandLikedIcon />) : (icon === 'heart' ? <HeartLikeIcon /> : <HandLikeIcon />)}</div>
-        <div>{counter}</div>
+        <div ref={counterRef}></div>
       </div>
       <div className={styles.tooltip} role="tooltip">{liked ? 'Liked' : 'Like'}</div>
     </button>
