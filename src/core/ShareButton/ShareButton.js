@@ -7,9 +7,8 @@ const ShareButton = ({ className, onClick }) => {
   const [shared, setShared] = useState(false)
 
   const handleClick = () => {
-    const isShared = !shared
-    setShared(isShared)
-    onClick({ shared: isShared })
+    setShared(!shared)
+    onClick()
   }
 
   return (
