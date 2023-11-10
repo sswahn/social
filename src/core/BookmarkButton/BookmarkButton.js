@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { debounceUtility } from '../../utilities/debounce'
-import BookmarkIcon from './LikeIcon'
-import BookmarkedIcon from './LikedIcon'
+import { debounceUtility } from '../../utilities/debounceUtility.js'
+import BookmarkIcon from './LikeIcon.js'
+import BookmarkedIcon from './LikedIcon.js'
 import styles from './styles.module.css'
 
 const BookmarkButton = ({ className, onClick, debounce }) => {
