@@ -9,7 +9,6 @@ import {
   Avatar,
   BookmarkButton,
   CommentButton,
-  Emoji,
   LikeButton,
   ShareButton
 } from '@sswahn/social'
