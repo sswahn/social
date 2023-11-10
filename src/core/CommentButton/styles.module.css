@@ -19,6 +19,7 @@
 
 .comments div:first-child div:last-child {
   font-size: 18px;
+  margin-left: 2px;
 }
 
 .tooltip {
