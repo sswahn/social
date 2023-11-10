@@ -22,7 +22,7 @@ import {
 ```
 
 ### Avatar
-The Avatar component displays user avatars or profile images. Easily create an avatar element with support for custom user images and badges.
+The Avatar component displays user avatars or profile images. Has built in default when no image is provided.
 ```javascript
 <Avatar
   className="custom-avatar"
@@ -33,6 +33,7 @@ The Avatar component displays user avatars or profile images. Easily create an a
 ```  
 
 ### BookmarkButton
+
 ```javascript
 <BookmarkButton className="my-custom-class" onClick={handleBookmarkClick} />
 ```  
