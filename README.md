@@ -2,6 +2,13 @@
 
 A collection of reusable social components for use with React.  
 
+## Installation
+
+Using npm.
+```bash
+npm install @sswahn/social
+```  
+
 ## Usage
 Import the components.
 ```javascript
