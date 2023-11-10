@@ -71,5 +71,12 @@ Like button with an optional choice of heart or hand icons. Also has built-in cu
 />
 ```
 
+## Credits
+This library uses Font Awesome Icons.
+- Font Awesome Icons: [Font Awesome](https://fontawesome.com/)
+  - Icons used under the [Font Awesome Free License](https://fontawesome.com/license/free).
+
+
+
 ## License
 Social is [MIT Licensed](https://github.com/sswahn/social/blob/main/LICENSE)
