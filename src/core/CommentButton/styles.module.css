@@ -6,7 +6,6 @@
   cursor: pointer;
   font-size: 22px; 
   position: relative;
-  width: 100px;
 }
 
 .comments:hover .tooltip {
@@ -14,10 +13,8 @@
   opacity: 1;
 }
 
-.comments:first-child {
-  background: red;
+.comments div:first-child {
   display: flex;
-  flex-direction: row;
 }
 
 .tooltip {
