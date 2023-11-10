@@ -28,7 +28,7 @@ import {
 ```
 
 ### Avatar
-The Avatar component displays user avatars and has a built in default when no image is provided.
+The `Avatar` component displays user avatars and has a built in default when no image is provided.
 ```javascript
 <Avatar
   className="custom-avatar"
@@ -39,7 +39,7 @@ The Avatar component displays user avatars and has a built in default when no im
 ```  
 
 ### BookmarkButton
-The BookmarkButton component represents a button that users can interact with to bookmark or save content.
+The `BookmarkButton` component represents a button that users can interact with to bookmark or save content.
 ```javascript
 <BookmarkButton
   className="custom-bookmark-btn"
