@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { debounceUtility } from '../../utilities/debounceUtility'
+import { debounceUtility } from '../../utilities/debounceUtility.js'
 import LikeIcon from './LikeIcon.js'
 import LikedIcon from './LikedIcon.js'
 import styles from './styles.module.css'
