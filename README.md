@@ -5,7 +5,14 @@ A library of React components for managing social actions like displaying Avatar
 ## Usage
 Import the components.
 ```javascript
-import { Avatar, BookmarkButton, CommentButton, LikeButton, ShareButton } from '@sswahn/social'
+import {
+  Avatar,
+  BookmarkButton,
+  CommentButton,
+  Emoji,
+  LikeButton,
+  ShareButton
+} from '@sswahn/social'
 ```
 
 ### Avatar
