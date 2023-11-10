@@ -71,6 +71,11 @@ Like button with an optional choice of heart or hand icons. Also has built-in cu
 />
 ```
 
+## Peer Dependencies
+Social requires React as a peer dependency. You should have React installed in your project with a version compatible with this library.  
+
+[React](https://reactjs.org/): ^18.2.0  
+
 ## Credits
 This library uses Font Awesome Icons.
 - Font Awesome Icons: [Font Awesome](https://fontawesome.com/)
