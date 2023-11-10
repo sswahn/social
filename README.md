@@ -22,7 +22,7 @@ import {
 ```
 
 ### Avatar
-The Avatar component displays user avatars or profile images. Has built in default when no image is provided.
+The Avatar component displays user avatars and has a built in default when no image is provided.
 ```javascript
 <Avatar
   className="custom-avatar"
