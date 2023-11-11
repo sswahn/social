@@ -10,7 +10,7 @@
 .like:hover .tooltip {
   visibility: visible;
   opacity: 1;
-  transition-delay: 0.9s;
+  transition-delay: 0.5s;
 }
 
 .like div:first-child {
