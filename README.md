@@ -28,13 +28,14 @@ import {
 ```
 
 ### Avatar
-The `Avatar` component displays user avatars and has a built in default when no image is provided.
+The `Avatar` component displays user avatars and has a built in default when no image is provided. Has optional size prop for changing dimensions.
 ```javascript
 <Avatar
   className="custom-avatar"
   image="/path/to/user-avatar.jpg"
   username="JohnDoe"
   onClick={handleClick}
+  size="50px"
 />
 ```  
 
