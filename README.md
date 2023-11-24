@@ -63,7 +63,7 @@ The `LikeButton` has an optional choice of heart or hand icons, it defaults to h
 ```javascript
 <LikeButton
   className="custom-like-btn"
-  icon={heart}
+  icon="heart"
   count={0}
   onClick={handleLikeClick}
 />
