@@ -1,6 +1,7 @@
 
 .avatar {
   font-size: 35px;
-  padding-right: 5px;
+  padding: 0;
+  margin: 0;
   position: relative;
 }
